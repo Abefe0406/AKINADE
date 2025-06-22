@@ -31,11 +31,8 @@ body {
 .logo {
         width: 150px;
         height: auto;
-        top: 10px;
-}
-
-.logo span {
-        color: #ff0000;
+        margin-top: 15px;
+        margin-left: 5px:
 }
 
 .nav-items {
@@ -482,6 +479,7 @@ nav .fas{
         .logo {
                 margin-top: 8px;
                 width: 80px;
+                margin-left: 3px;
         }
 
         .nav-items {
