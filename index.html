@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a6ce87662d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <div id="header">
+            <div class="container">
+                <nav class="navbar">
+                        <img src="logo.png" class="logo">
+                    <ul id="sidemenu" class="nav-items">
+                        <li><a href="#header" onclick="navigate(event, 'header')">Home</a></li>
+                        <li><a href="#about" onclick="navigate(event, 'about')">About</a></li>
+                        <li><a href="#services" onclick="navigate(event, 'services')">Services</a></li>
+                        <li><a href="#portfolio" onclick="navigate(event, 'portfolio')">Portfolio</a></li>
+                        <li><a href="#contact" onclick="navigate(event, 'contact')">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Computer Operator</p>
+                    <h1>Hi, I'm <span>Damilare</span><br>Akinade from Nigeria</h1>
+                </div>
+            </div>
+        </div>
+        
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="IQK_8961(1).png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Oluwadamilare Ayomide Akinade is a Computer Science undergraduate at Adeleke University, Ede. His skills include proficiency in Microsoft 365 Apps, with some knowledge of Frontend Web Development and Graphics Design.</p>
+                        <div class="tabs">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Graphics Design</span><br>Designing of flyers, cards, Posters.</li>
+                                <li><span>Microsoft Office Skill</span><br>Creating and editing documents, spreadsheets, and presentations.</li>
+                                <li><span>Web Design and Development</span><br>Creating visually appealing digital user experiences and interfaces.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2023</span><br>Joint Admissions Matriculation Board (JAMB)</li>
+                                <li><span>2023</span><br>The West African Examination Council</li>
+                                <li><span>2023</span><br>National Examination Council</li>
+                                <li><span>2024-Current</span><br>Microsoft Word Associate Certification</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Bachelor's in Computer Science</span><br>Adeleke University Ede, 2027</li>
+                                <li><span>High School</span><br>Valencia Schools Ibadan, 2023</li>
+                                <li><span>Elementary School</span><br>B&B International School, 2017</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <h1>My Services</h1>
+        </header>
+        
+        <div id="services">
+            <div class="service-card">
+                <div class="icon">
+                    <i class="fas fa-desktop"></i>
+                    <h2>Web Design</h2>
+                    <p>Creating visually appealing and user-friendly websites that provide an engaging online experience.</p>
+                    <a href="https://www.google.com/search?q=web+design&oq=web+design&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg90gEINDQ3NmowajSoAgCwAgE&sourceid=chrome&ie=UTF-8" onclick="showAlert('Web Design')">Learn more</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="icon">
+                    <i class="fas fa-briefcase"></i>
+                    <h2>Virtual Assistant</h2>
+                    <p>Streamlining administrative tasks and enhancing communication within teams.</p>
+                    <a href="https://www.google.com/search?q=virtual+assistant&oq=v&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIGCAMQRRg7MgcIBBAAGI8CMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMTM0M2owajmoAgCwAgE&sourceid=chrome&ie=UTF-8" onclick="showAlert('Virtual Assistant')">Learn more</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="icon">
+                    <i class="fas fa-paint-brush"></i>
+                    <h2>Graphics Design</h2>
+                    <p>Using creativity and technology to convey ideas through imagery, typography, and layout.</p>
+                    <a href="https://www.google.com/search?q=graphic+design&oq=gra&gs_lcrp=EgZjaHJvbWUqDwgCEAAYQxixAxiABBiKBTIGCAAQRRg5Mg8IARAAGEMYsQMYgAQYigUyDwgCEAAYQxixAxiABBiKBTISCAMQABhDGIMBGLEDGIAEGIoFMg8IBBAAGEMYsQMYgAQYigUyEggFEC4YQxjHARjRAxiABBiKBTIMCAYQABhDGIAEGIoFMgwIBxAAGEMYgAQYigUyCggIEAAYsQMYgATSAQgyODI5ajBqOagCALACAQ&sourceid=chrome&ie=UTF-8" onclick="showAlert('Graphics Design')">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-titles">My Works</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="hard.jpg" alt="Hardware Installation">
+                        <div class="layer">
+                            <h3>Hardware Installation</h3>
+                            <p>Hardware installation is the process of physically adding or modifying the physical components of a computer system, such as hard drives, memory, graphics cards, or processors.</p>
+                            <a href="https://www.google.com/search?q=hardware+installation&oq=hardwar&gs_lcrp=EgZjaHJvbWUqDggBEEUYJxg7GIAEGIoFMgYIABBFGDkyDggBEEUYJxg7GIAEGIoFMg8IAhAAGEMYsQMYgAQYigUyDAgDEAAYQxiABBiKBTIMCAQQABhDGIAEGIoFMgcIBRAAGIAEMgcIBhAAGIAEMgYIBxBFGD3SAQgzMzY2ajBqOagCALACAQ&sourceid=chrome&ie=UTF-8"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="data.jpg" alt="Data Analysis">
+                        <div class="layer">
+                            <h3>Data Analysis</h3>
+                            <p>Data analysis is the process of systematically inspecting, cleaning, and interpreting data to extract meaningful insights, identify patterns, and support decision-making.</p>
+                            <a href="https://www.google.com/search?q=data+analysis&oq=data+analysis&gs_lcrp=EgZjaHJvbWUyDAgAEEUYORixAxiABDINCAEQABiRAhiABBiKBTIKCAIQABixAxiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIJCAkQABgKGIAE0gEIOTcyNWowajmoAgCwAgE&sourceid=chrome&ie=UTF-8"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="cyb.jpg" alt="Cyber Security">
+                        <div class="layer">
+                            <h3>Cyber Security</h3>
+                            <p>Cybersecurity is the practice of protecting systems, networks, and data from digital attacks, unauthorized access, and damage.</p>
+                            <a href="https://www.google.com/search?q=cyber+security&oq=cyber&gs_lcrp=EgZjaHJvbWUqDggBEEUYJxg7GIAEGIoFMgYIABBFGDkyDggBEEUYJxg7GIAEGIoFMgYIAhBFGDsyEAgDEAAYkQIYsQMYgAQYigUyDQgEEAAYkQIYgAQYigUyDAgFEAAYQxiABBiKBTIPCAYQABhDGLEDGIAEGIoFMgYIBxBFGD3SAQgyNzgzajBqOagCALACAQ&sourceid=chrome&ie=UTF-8"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="work.html" class="btns">See more</a>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-titles">Contact Me</h1>
+                        <a href="mailto:damilareakinade0406@gmail.com"><p><i class="fas fa-envelope"></i> damilareakinade0406@gmail.com</p></a>
+                        <a href="tel:08163516624"><p><i class="fas fa-phone"></i> +234 816 351 6624</p></a>
+                        <a href="https://www.google.com/maps/place/Ooni+Crownland+Estate,+8+3rd+Ave,+Ife+220282,+Osun/@7.5047705,4.5016891,17z/data=!3m1!4b1!4m6!3m5!1s0x103831345e83060d:0x5f6c6b3bae2d55b3!8m2!3d7.5047652!4d4.504264!16s%2Fg%2F11hln6gpst?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D" target="_blank"> <p> <i class="fas fa-map-marker-alt"></i> Road 11, House 10, Ooni Crown Land Estate, Mayfair, Ile-Ife, Osun State, Nigeria.</p></a>
+                        <a href="https://maps.app.goo.gl/21bTAheBAHZrZ4tRA"><p><i class="fas fa-map-marker-alt"></i> No 10, Unity Cresent, Iyana Olopa Bus Stop, Akobo, Ibadan, Oyo State, Nigeria.</p></a>
+                        <div class="social-icons">
+                            <a href="https://wa.me/2348163516624" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61555221504351" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://x.com/damilareak8267?s=21" target="_blank"><i class="fab fa-x"></i></a>
+                            <a href="https://www.instagram.com/abefe__0406" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="http://www.linkedin.com/in/damilare-akinade-982456194" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <a href="CV.pdf" class="btn btn" target="_blank" onclick="downloadCV(event)">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input name="Name" type="text" placeholder="Name" required>
+                            <input name="Email" type="email" placeholder="Email" required>
+                            <input type="tel" name="Phone" placeholder="Phone Number" required>
+                            <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                            <button type="submit" class="btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright © Akinade Oluwadamilare Ayomide, 2025 <img src="2ff07905-d197-46cd-9cc3-fc5e44b50ade_removalai_preview.png" class="logo2"> Adeleke University Ede.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+    const navItems = document.querySelector('.nav-items');
+    navItems.classList.toggle('active');
+}
+
+window.addEventListener('resize', () => {
+    const navItems = document.querySelector('.nav-items');
+    if (window.innerWidth > 768) {
+        navItems.classList.remove('active'); // Remove active class on larger screens
+    }
+});
+
+// Ensure the element with class 'logo-image' exists before adding the event listener
+const logoImage = document.querySelector('.logo-image');
+if (logoImage) {
+    logoImage.addEventListener('click', toggleMenu);
+}
+
+const tablinks = document.getElementsByClassName("tab-links");
+const tabcontent = document.getElementsByClassName("tab-contents");
+
+function openTab(tabName) {
+    const tabContents = document.querySelectorAll('.tab-contents');
+    tabContents.forEach(content => {
+        content.classList.remove('active-tab');
+    });
+
+    const activeTab = document.getElementById(tabName);
+    if (activeTab) {
+        activeTab.classList.add('active-tab');
+    }
+
+    const tabLinks = document.querySelectorAll('.tab-links');
+    tabLinks.forEach(link => {
+        link.classList.remove('active-link');
+    });
+
+    const clickedTab = document.querySelector(`.tab-links[onclick="openTab('${tabName}')"]`);
+    if (clickedTab) {
+        clickedTab.classList.add('active-link');
+    }
+}
+
+function showAlert(service) {
+    alert('You clicked on ' + service + ' Service!');
+}
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxX8umZTx_cKmvdR0C-Pq912Qo8huFJFtPq4RIeUny2jZAZXwYcyZ1RYunC_2rPsx9E/exec';
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById('msg');
+const submitButton = form.querySelector('button[type="submit"]');
+
+    form.addEventListener('submit', e => {
+    e.preventDefault();
+    submitButton.disabled = true;
+    msg.innerHTML = "Sending...";
+
+    fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form)
+    })
+    .then(response => {
+        console.log('Response:', response);
+        if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.text();
+    })
+    .then(data => {
+        console.log('Data:', data);
+        msg.innerHTML = "Message sent successfully!";
+        setTimeout(function() {
+        msg.innerHTML = "";
+        }, 5000);
+        form.reset();
+    })
+    .catch(error => {
+        console.error('Error!', error.message);
+        msg.innerHTML = "Error sending message. Please try again.";
+    })
+    .finally(() => {
+        submitButton.disabled = false;
+    });
+    });
+
+        function openmenu() {
+            const navItems = document.getElementById('sidemenu');
+            navItems.classList.add('active'); // Add the 'active' class to show the menu
+        }
+
+        function closemenu() {
+            const navItems = document.getElementById('sidemenu');
+            navItems.classList.remove('active'); // Remove the 'active' class to hide the menu
+        }
+
+        function navigate(event, section) {
+            event.preventDefault(); // Prevent default anchor behavior
+            closemenu(); // Close the menu
+            document.querySelector(`#${section}`).scrollIntoView({ behavior: 'smooth' }); // Scroll to the section
+        }
+    
+    </script>
+</body>
+</html>
