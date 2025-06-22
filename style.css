@@ -12,9 +12,10 @@ body {
 }
 
 #header {
-        background-image: url(9.png);
+        background-image: url(IQK_90041.png);
         background-repeat: no-repeat;
-        background-size: 500px 500px;
+        background-size: contain;
+        height: 100vh;
         background-position: right top 100px;
 }
 
@@ -462,8 +463,9 @@ nav .fas{
 
 @media (max-width: 600px) {
         #header {
-                background-image: url(9.png);
-                background-size: 300px 310px;
+                background-image: url(IQK_90041.png);
+                background-size: contain;
+                height: 100vh;
                 background-position: center 50px;
         }
 
@@ -564,8 +566,8 @@ nav .fas{
         .about-col-1 img {
                 width: 100%;
                 border-radius: 20px;
-                margin-top: -100px;
-                height: 65vh;
+                margin-top: -500px;
+                height: 50vh;
                 max-height: 80vh;
         }
         
