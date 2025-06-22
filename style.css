@@ -447,10 +447,6 @@ footer p {
         font-size: 15px;
 }
 
-.logo2 {
-        width: 15px;
-}
-
 #msg{
         color: #61b752;
         margin-top: 15px;
@@ -624,10 +620,5 @@ nav .fas{
         footer p {
                 font-size: 14px;
                 margin: 0;
-        }
-        
-        .logo2 {
-                width: 20px;
-                vertical-align: middle;
         }
 }
