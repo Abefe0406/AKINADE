@@ -230,7 +230,7 @@ const submitButton = form.querySelector('button[type="submit"]');
     e.preventDefault();
     submitButton.disabled = true;
     msg.innerHTML = "Sending...";
-    msg.innerHTML = "";
+    msg1.innerHTML = "";
 
     fetch(scriptURL, {
         method: 'POST',
