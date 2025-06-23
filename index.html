@@ -230,8 +230,6 @@ const submitButton = form.querySelector('button[type="submit"]');
     e.preventDefault();
     submitButton.disabled = true;
     msg.innerHTML = "Sending...";
-    msg1.innerHTML = "";
-
     fetch(scriptURL, {
         method: 'POST',
         body: new FormData(form)
@@ -253,7 +251,7 @@ const submitButton = form.querySelector('button[type="submit"]');
     })
     .catch(error => {
         console.error('Error!', error.message);
-        msg1.innerHTML = "Error sending message. Please try again.";
+        msg.innerHTML = "Error sending message. Please try again.";
     })
     .finally(() => {
         submitButton.disabled = false;
