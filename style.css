@@ -457,6 +457,10 @@ nav .fas{
         display: none;
 }
 
+.logo2{
+        width: 15px;
+}
+
 @media (max-width: 600px) {
         #header {
                 background-image: url(IQK_90041.png);
@@ -620,5 +624,10 @@ nav .fas{
         footer p {
                 font-size: 14px;
                 margin: 0;
+        }
+
+        .logo2{
+                width: 20px;
+                vertical-align: middle;
         }
 }
