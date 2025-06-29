@@ -460,6 +460,7 @@ nav .fas{
 .logo2{
         width: 25px;
         height: 15px;
+        margin-top: 20px;
 }
 
 @media (max-width: 600px) {
